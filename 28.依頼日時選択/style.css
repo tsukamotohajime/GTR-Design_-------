@@ -1,0 +1,286 @@
+@import url("../css/common.css");
+
+/*28_request_date_and_time_selection.htmlここから*********************/
+.calender-page-container_panel {
+    display: flex;
+    gap: 42px;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.calendar_head {
+    text-align: center;
+    font-size: 16px;
+    padding: 0 0 20px;
+    margin: 0;
+}
+
+.calendar {
+    padding: 0;
+}
+
+.calendar-container th,
+td {
+    text-align: center;
+    width: 35px;
+    height: 35px;
+}
+
+.calendar-container th {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.calendar-container td {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.day td:first-child {
+    color: #b90000;
+}
+
+.day td:last-child {
+    color: #6d7eaf;
+}
+
+.week td:first-child {
+    color: #b90000;
+}
+
+.week td:last-child {
+    color: #6d7eaf;
+}
+
+.calender_day {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.day td.disabled_day {
+    color: #ccc;
+}
+
+.calender__date_label {
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #f7f7f7;
+    padding: 15px 25px;
+    border-radius: 10px;
+    max-width: 380px;
+    width: 100%;
+    text-align: center;
+    margin: 10px auto 30px;
+}
+
+.calender_date {
+    font-size: 14px;
+    color: #777777;
+    text-align: center;
+}
+
+.is-disabled {
+    visibility: hidden;
+}
+
+.calender-panel {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 1335px) {
+    #calendar_2 {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    #calendar_1 {
+        display: none;
+    }
+
+    .calender__date_label {
+        font-size: 16px;
+        padding: 15px;
+    }
+}
+
+.calender_date__input {
+    display: none;
+}
+
+.calender_date__input + label {
+    display: block;
+    position: relative;
+    padding: 6.5px 7px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    border-radius: 50%;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.calender_date__input + label:hover {
+    border: 2px solid #6d7eaf;
+}
+
+.calender_date__input:checked + label {
+    border: 2px solid #6d7eaf;
+    background-color: #6d7eaf;
+    color: #fff;
+}
+
+.calender-page-container_prev {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #6d7eaf;
+    background-color: transparent;
+    border-radius: 4px;
+    background-image: url("../images/common/arrow_left_blue.png");
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.calender-page-container_prev.disabled {
+    border: 1px solid #ccc;
+    background-image: url("../images/common/arrow_left_gray.png");
+}
+
+.calender-page-container_next {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #6d7eaf;
+    background-color: transparent;
+    border-radius: 4px;
+    background-image: url("../images/common/arrow_right_blue.png");
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.calender-page-container_next.disabled {
+    border: 1px solid #ccc;
+    background-image: url("../images/common/arrow_right_gray.png");
+}
+
+.calender-page-container_prev span,
+.calender-page-container_next span {
+    display: none;
+}
+
+.calendar_wrap {
+    display: flex;
+    gap: 42px;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+/*モーダル*/
+#time_modal {
+    display: none;
+}
+
+#time_modal.is-open {
+    display: block;
+}
+
+.modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: +100;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__container {
+    background-color: #fff;
+    padding: 40px;
+    margin: 20px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.modal__close {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    padding: 12px;
+    margin: 16px auto 0;
+    background: #4caf50;
+    color: white;
+}
+
+.modal_title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.modal_time_input {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.modal__container hr {
+    border: 1px solid #e2e4f0;
+    margin: 0 0 20px 0;
+}
+
+.model_time_disabled {
+    color: #ccc;
+}
+
+.modal_button_area {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.button_common.button_common__modal_cancel {
+    margin: 0;
+    max-width: 157px;
+    background-image: none;
+    border: 1px solid #6d7eaf;
+    background-color: transparent;
+    color: #6d7eaf;
+}
+
+.button_common.button_common__modal_ok {
+    margin: 0;
+    max-width: 157px;
+    background-image: none;
+}
+
+@media (max-width: 767px) {
+    .modal__container {
+        padding: 40px 20px;
+    }
+}
+
+/*28_request_date_and_time_selection.htmlここまで*********************/

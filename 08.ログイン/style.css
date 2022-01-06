@@ -1,0 +1,210 @@
+@import url("../css/common.css");
+
+/*08_my-page**********************************/
+
+.usage_conditions_items {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.usage_conditions_item {
+    display: block;
+    background-color: #6d7eaf;
+    color: #fff;
+    width: 100%;
+    padding: 30px 30px 35px;
+    text-align: center;
+    border-radius: 10px;
+    background-image: url("../images/common/arrow_right_white.png");
+    background-position: right 15px center;
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+}
+
+.usage_conditions_item__title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.usage_conditions_item__data {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.usage_conditions_item__data span {
+    font-size: 18px;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.amount_used_panel {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 22px 40px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.amount_used_panel__data {
+    color: #333;
+}
+
+.amount_used_panel__label {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.amount_used_panel__label span {
+    font-size: 14px;
+}
+
+.data_amount {
+    font-size: 32px;
+    color: #6d7eaf;
+    font-weight: 700;
+}
+
+.data_amount_label {
+    font-size: 24px;
+    color: #6d7eaf;
+}
+
+.data_amount_note {
+    font-size: 18px;
+    color: #6d7eaf;
+}
+
+
+/* -----------------------
+ログイン
+----------------------- */
+
+.login_page__title {
+    font-size: 20px;
+    text-align: center;
+}
+
+.login_page__message {
+    font-size: 14px;
+    text-align: center;
+}
+
+.login_page__form_panel {
+    display: block;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px 40px;
+    align-items: inherit;
+    margin-bottom: 20px;
+    height: 292px;
+}
+
+.form_label {
+    text-align: left;
+    font-weight: 500;
+}
+
+.form_input__mail {
+    text-align: left;
+}
+
+.button_note {
+    background-image: url(../images/link_mark.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+    background-size: 12px;
+    text-align: center;
+    background-position: calc(50% - -115px);
+}
+
+.button_note a {
+    border-bottom: solid 1px #6d7eaf;
+    color: #6d7eaf;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.button_note a:hover {
+    color: red;
+    border-color: red;
+}
+
+.form_error_message {
+    display: none;
+}
+
+.page_container .page_container_login {
+    display: block;
+}
+
+
+/*リキャプチャー*/
+
+.form_recapture {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.page_container.page_container_login .button_common {
+    margin: 0 auto;
+}
+
+.form_input.form_input__mail {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+    /*親要素いっぱい広げる*/
+    padding: 10px 15px;
+    /*ボックスを大きくする*/
+    font-size: 16px;
+    border-radius: 3px;
+    /*ボックス角の丸み*/
+    border: 2px solid #ddd;
+    /*枠線*/
+    box-sizing: border-box;
+    /*横幅の解釈をpadding, borderまでとする*/
+}
+
+.form_input.form_input__password {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    /*親要素いっぱい広げる*/
+    padding: 10px 15px;
+    /*ボックスを大きくする*/
+    font-size: 16px;
+    border-radius: 3px;
+    /*ボックス角の丸み*/
+    border: 2px solid #ddd;
+    /*枠線*/
+    box-sizing: border-box;
+    /*横幅の解釈をpadding, borderまでとする*/
+}
+
+.login_page__form_panel label {
+    margin-bottom: 10px;
+}
+
+.form_input.form_input__password:focus,
+.form_input.form_input__mail:focus {
+    border: 2px solid #6d7eaf;
+    z-index: 10;
+    outline: 0;
+}
+
+.form_label__outer input {
+    margin-right: 10px;
+    transform: scale(2);
+    border-color: #ddd;
+    margin-left: 7px;
+}
+
+
+/*8_login ここまで**********************************/

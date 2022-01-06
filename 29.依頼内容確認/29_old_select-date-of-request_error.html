@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="format-detection" content="email=no,telephone=no,address=no"/>
+	<title>"2nd STORAGE"</title>
+	<meta name="description" content=""/>
+	<meta name="robots" content="index,follow"/>
+	<meta property="og:admins" content="（FBのID）"/>
+	<meta property="og:title" content="2nd STORAGE"/>
+	<meta property="og:type" content="（ページの種類）"/>
+	<meta property="og:description" content="（ページの説明）"/>
+	<meta property="og:url" content="（ページのURL）"/>
+	<meta property="og:image" content="（ogp画像のURL）"/>
+	<meta property="og:locale" content="ja_JP"/>
+	<meta property="og:site_name" content="（サイトタイトル）"/>
+	<meta name="twitter:card" content="（カード種類）"/>
+	<meta name="twitter:site" content="（@Twitterユーザー名）"/>
+	<link rel="canonical" href="（正しいページURL）"/>
+	<link rel="icon" href="favicon.ico"/>
+	<link
+			rel="apple-touch-icon-precomposed"
+			href="（アップルタッチアイコンの画像URL）"
+	/>
+	<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+	/>
+
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+	<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+	/>
+	<title>2nd storage</title>
+</head>
+<!-- ▼ヘッダー部分 //#header -->
+<body>
+<header class="header">
+	<a class="logo" href="#"
+	><img src="../images/logo.png" alt="2nd STORAGE"
+	/></a>
+	<input class="menu-btn" id="menu-btn" type="checkbox"/>
+	<div class="icon-menu-box">
+		<a class="header-user" href="#"><span>山田 太郎 様</span></a
+		><a class="header-button-01 header-button-01--icon02" href="#"
+	><span class="logout">ログアウト</span></a
+	>
+	</div>
+	<label class="menu-icon" for="menu-btn"
+	><span class="navicon"></span
+	></label>
+</header>
+
+<!-- ▼グローバルメニュー-->
+<div class="my-page_content">
+	<nav class="my-page_nav">
+		<div class="my-page_nav__user">
+			<a class="menu_user" href="#">山田 太郎 様</a>
+		</div>
+		<ul id="my-page_nav__menu" class="my-page_nav__menu">
+			<li class="my-page_nav__item my-page_nav__item--01">
+				<a href="#">マイページ</a>
+			</li>
+			<hr class="border_login_header border_login_header_01 sp_only"/>
+			<li class="my-page_nav__item my-page_nav__item--02">
+				<a href="#">アイテム一覧​</a>
+			</li>
+			<hr class="border_login_header border_login_header02 sp_only"/>
+			<li class="my-page_nav__items">
+				<div class="my-page_nav__item--ac my-page_nav__item--03">
+					集荷依頼​
+				</div>
+				<ul class="my-page_nav__submenu">
+					<li><a class="my-page_nav__subitem" href="#">集荷依頼​</a></li>
+					<li>
+						<a class="my-page_nav__subitem" href="#">集荷依頼​一覧</a>
+					</li>
+				</ul>
+				<hr class="border_login_header border_login_header03 sp_only"/>
+			</li>
+			<li class="my-page_nav__items">
+				<div class="my-page_nav__item--ac my-page_nav__item--04">
+					取出し依頼​
+				</div>
+				<ul class="my-page_nav__submenu">
+					<li><a class="my-page_nav__subitem" href="#">サブメニュー</a></li>
+					<li><a class="my-page_nav__subitem" href="#">サブメニュー</a></li>
+				</ul>
+				<hr class="border_login_header border_login_header04 sp_only"/>
+			</li>
+			<li class="my-page_nav__item my-page_nav__item--06">
+				<a href="#">ご利用額照会​</a>
+			</li>
+			<hr class="border_login_header sp_only"/>
+			<li class="my-page_nav__item my-page_nav__item--07">
+				<a href="#">お客さま情報​</a>
+			</li>
+			<hr class="border_login_header sp_only"/>
+			<li class="my-page_nav__item my-page_nav__item--08">
+				<a href="#">お問い合わせ​</a>
+			</li>
+			<hr class="border_login_header sp_only"/>
+			<li class="my-page_nav__item my-page_nav__item--09">
+				<a href="#">サービス・料金​</a>
+			</li>
+			<hr class="border_login_header sp_only"/>
+		</ul>
+	</nav>
+	<!-- ▼メイン部分 //#main -->
+	<main class="my-page_main">
+		<h1 class="my-page_title">依頼内容の確認</h1>
+		<div class="estimated_amount_panel estimated_amount_panel--old">
+			<div class="estimated_amount_panel__label estimated_amount_panel__label--old">ご請求予定金額</div>
+			<div class="estimated_amount_panel__data estimated_amount_panel__data--old">
+				<span class="data_plane_name data_plane_name--old">0.5畳プラン</span>
+				<span class="data_amount data_amount--old">8,800</span>
+				<span class="data_amount_label data_amount_label--old">円</span>
+				<span class="data_amount_note data_amount_note--old"
+				>（税込）</span
+				>
+			</div>
+		</div>
+		<form>
+			<div class="change_panel_items">
+				<div class="change_panel_item">
+					<h3 class="change_panel_item__name">配送先/集荷先</h3>
+					<p class="change_panel_item__data error">
+						住所を選択してください。
+					</p>
+					<a class="button03 button03__abs">変更する</a>
+				</div>
+				<div class="change_panel_item">
+					<h3 class="change_panel_item__name">配送日/集荷日</h3>
+					<p class="change_panel_item__data">00/00/00　00:00~00:00</p>
+					<a class="button03 button03__abs">変更する</a>
+				</div>
+				<div class="change_panel_item">
+					<h3 class="change_panel_item__name">支払い方法</h3>
+					<p class="change_panel_item__data error">
+						支払方法を選択してください。
+					</p>
+					<a class="button03 button03__abs">変更する</a>
+				</div>
+			</div>
+			<div class="request_panel_items">
+				<div class="request_panel_item">
+					<div
+							class="request_panel_item__img"
+							style="background-image: url('../images/sample/sample_image_01.png')"
+					></div>
+					<ul class="request_panel_item__options">
+						<li>
+							<input
+									class="form_label__option"
+									id="form_label__option01"
+									type="checkbox"
+									name="sample"
+							/><label for="form_label__option01">オプション01</label>
+						</li>
+						<li>
+							<input
+									class="form_label__option"
+									id="form_label__option02"
+									type="checkbox"
+									name="sample"
+							/><label for="form_label__option02">オプション02</label>
+						</li>
+						<li>
+							<input
+									class="form_label__option"
+									id="form_label__option03"
+									type="checkbox"
+									name="sample"
+							/><label for="form_label__option03">オプション03</label>
+						</li>
+						<li>
+							<input
+									class="form_label__option"
+									id="form_label__option04"
+									type="checkbox"
+									name="sample"
+							/><label for="form_label__option04">オプション04</label>
+						</li>
+					</ul>
+				</div>
+				<div class="request_panel_item">
+					<div
+							class="request_panel_item__img"
+							style="background-image: url('../images/sample/sample_image_01.png')"
+					></div>
+					<ul class="request_panel_item__options">
+						<li>
+							<input
+									class="form_label__option"
+									id="form_label__option05"
+									type="checkbox"
+									name="sample"
+							/><label for="form_label__option05">オプション01</label>
+						</li>
+						<li>
+							<input
+									class="form_label__option"
+									id="form_label__option06"
+									type="checkbox"
+									name="sample"
+							/><label for="form_label__option06">オプション02</label>
+						</li>
+						<li>
+							<input
+									class="form_label__option"
+									id="form_label__option07"
+									type="checkbox"
+									name="sample"
+							/><label for="form_label__option07">オプション03</label>
+						</li>
+						<li>
+							<input
+									class="form_label__option"
+									id="form_label__option08"
+									type="checkbox"
+									name="sample"
+							/><label for="form_label__option08">オプション04</label>
+						</li>
+					</ul>
+				</div>
+				<div class="request_panel_item">
+					<div
+							class="request_panel_item__img"
+							style="background-image: url('../images/sample/sample_image_01.png')"
+					></div>
+					<ul class="request_panel_item__options">
+						<li>
+							<input
+									class="form_label__option"
+									id="form_label__option09"
+									type="checkbox"
+									name="sample"
+							/><label for="form_label__option09">オプション01</label>
+						</li>
+						<li>
+							<input
+									class="form_label__option"
+									id="form_label__option10"
+									type="checkbox"
+									name="sample"
+							/><label for="form_label__option10">オプション02</label>
+						</li>
+						<li>
+							<input
+									class="form_label__option"
+									id="form_label__option11"
+									type="checkbox"
+									name="sample"
+							/><label for="form_label__option11">オプション03</label>
+						</li>
+						<li>
+							<input
+									class="form_label__option"
+									id="form_label__option12"
+									type="checkbox"
+									name="sample"
+							/><label for="form_label__option12">オプション04</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="operation_panel">
+				<a class="button_common button_common__back">戻る</a>
+				<a class="button_common button_common__ok">確定</a>
+			</div>
+		</form>
+	</main>
+</div>
+<!-- ▼footer部分 //#footer-->
+<footer id="footer">
+	<nav>
+		<ul>
+			<li><a href="#">お問い合わせ</a></li>
+			<li><a href="#">利用規約</a></li>
+			<li><a href="#">個人情報保護方針</a></li>
+			<li><a href="#">特定商取引法及び古物営業法に基づく表記</a></li>
+			<li><a href="#">運営方針</a></li>
+		</ul>
+	</nav>
+	<hr/>
+	<p class="copyright">
+		Copyright © GEO CORPORATION. ALL RIGHTS RESERVED.​
+	</p>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

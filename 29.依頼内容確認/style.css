@@ -1,0 +1,312 @@
+@import url("../css/common.css");
+
+.button_common.button_common__back {
+  margin: 0;
+  margin-top: 40px;
+  background-image: url("../images/common/arrow_left_white.png");
+  background-position: left 10px center;
+}
+.complete_message {
+  color: #6d7eaf;
+  font-size: 24px;
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .button_common.button_common__back {
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  .complete_message {
+    font-size: 20px;
+    text-align: center;
+  }
+  .sp_only {
+    display: block;
+  }
+  .my-page_title.my-page_title__complete {
+    margin-bottom: 40px;
+    margin-top: -40px;
+  }
+}
+/*29_select-date-of-request__complete.html ここまで**********************************/
+
+/*29_select-date-of-request.html ここから**********************************/
+.estimated_amount_panel {
+  background-color: #9cacd9;
+  padding: 25px 20px 25px 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.estimated_amount_panel__label {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+.estimated_amount_panel__data {
+}
+.data_amount.data_amount--white {
+  color: #fff;
+}
+.data_amount_label.data_amount_label--white {
+  color: #fff;
+}
+.data_amount_note.data_amount_note--white {
+  color: #fff;
+}
+/**旧ページのカラー**/
+.estimated_amount_panel.estimated_amount_panel--old {
+  background-color: #fff;
+}
+.estimated_amount_panel__label.estimated_amount_panel__label--old {
+  color: #6d7eaf;
+}
+.estimated_amount_panel__data.estimated_amount_panel__data--old {
+  color: #333333;
+}
+.data_plane_name.data_plane_name--old {
+  color: #333333;
+}
+.data_amount.data_amount--old {
+  color: #333333;
+}
+.data_amount_label.data_amount_label--old {
+  color: #333333;
+}
+.data_amount_note.data_amount_note--old {
+  color: #333333;
+}
+
+/**ここまで**/
+
+.estimated_content_panel {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.estimated_content_panel__title {
+  font-size: 18px;
+}
+.estimated_content_panel__label {
+  display: block;
+  font-size: 12px;
+  color: #6d7eaf;
+  margin-bottom: 6px;
+}
+.estimated_content_panel__name {
+  display: block;
+}
+.estimated_content_panel__date {
+  font-size: 18px;
+}
+.estimated_content_panel__date span {
+  font-size: 14px;
+}
+.estimated_content_panel__date.estimated_content_panel__date--red {
+  color: #b90000;
+}
+
+.change_panel_items {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.change_panel_item {
+  width: calc(33.333% - 13.333px);
+  padding: 20px 10px 60px;
+  border-top: 1px solid #6d7eaf;
+  border-bottom: 1px solid #6d7eaf;
+  position: relative;
+}
+.change_panel_item__name {
+  font-size: 18px;
+  color: #6d7eaf;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.change_panel_item__data {
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+.change_panel_item__data.error {
+  color: #b90000;
+}
+.request_panel_items {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.request_panel_item {
+  width: calc(33.333% - 13.333px);
+  padding: 0;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.request_panel_item__img {
+  width: 100%;
+  height: 0;
+  padding-top: 70%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.request_panel_item__options {
+  padding: 20px 20px 10px;
+}
+.form_label__option {
+  padding-left: 10px;
+}
+.form_label__option {
+  display: none;
+}
+.form_label__option + label {
+  display: block;
+  background-color: #f7f7f7;
+  padding: 12px 12px 12px 40px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  position: relative;
+  cursor: pointer;
+}
+.form_label__option + label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #b9c0d1;
+  border-radius: 4px;
+  background-color: #fff;
+  background-image: none;
+}
+.form_label__option:checked + label::before {
+  background-image: url("../images/input_radio/radio_icon_check_blue.png");
+  background-size: 75%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.form_label__option:checked + label {
+  background-color: #e2e4f0;
+}
+
+.button_common.button_common__ok {
+  margin: 40px 0 0 0;
+}
+.campaign_code_panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+}
+.campaign_code_panel__name {
+  font-size: 20px;
+  color: #6d7eaf;
+  margin-right: 40px;
+}
+.campaign_code_panel__data {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+.campaign_code_panel__input {
+  border: 1px solid #b9c0d1;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 16px;
+  padding: 12px;
+  max-width: 498px;
+  width: 100%;
+}
+.campaign_code_panel__button {
+  margin: 0 0 0 10px;
+  background-color: #6d7eaf;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+.campaign_code_panel__button:hover {
+  background-color: #9cacd9;
+}
+@media (max-width: 767px) {
+  .estimated_amount_panel {
+    flex-direction: column;
+    padding: 25px 20px;
+  }
+  .estimated_amount_panel__label {
+    margin-bottom: 15px;
+  }
+  .data_plane_name {
+    display: block;
+    text-align: center;
+  }
+  .estimated_content_panel {
+    flex-direction: column;
+  }
+  .estimated_content_panel__title {
+    width: 100%;
+    font-size: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #b9c0d1;
+    margin-bottom: 10px;
+  }
+  .estimated_content_panel__date {
+    width: 100%;
+    text-align: right;
+  }
+  .change_panel_items {
+    flex-direction: column;
+    gap: 0;
+  }
+  .change_panel_item {
+    width: 100%;
+    border-bottom-color: transparent;
+  }
+  .change_panel_item:last-child {
+    border-bottom-color: #6d7eaf;
+  }
+  .request_panel_items {
+    flex-direction: column;
+  }
+  .request_panel_item {
+    width: 100%;
+  }
+  .campaign_code_panel {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .campaign_code_panel__name {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .campaign_code_panel__data {
+    width: 100%;
+  }
+}
+
+/*29_select-date-of-request.html ここまで**********************************/

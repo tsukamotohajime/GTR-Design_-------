@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="format-detection" content="email=no,telephone=no,address=no"/>
+	<title>"2nd STORAGE"</title>
+	<meta name="description" content=""/>
+	<meta name="robots" content="index,follow"/>
+	<meta property="og:admins" content="（FBのID）"/>
+	<meta property="og:title" content="2nd STORAGE"/>
+	<meta property="og:type" content="（ページの種類）"/>
+	<meta property="og:description" content="（ページの説明）"/>
+	<meta property="og:url" content="（ページのURL）"/>
+	<meta property="og:image" content="（ogp画像のURL）"/>
+	<meta property="og:locale" content="ja_JP"/>
+	<meta property="og:site_name" content="（サイトタイトル）"/>
+	<meta name="twitter:card" content="（カード種類）"/>
+	<meta name="twitter:site" content="（@Twitterユーザー名）"/>
+	<link rel="canonical" href="（正しいページURL）"/>
+	<link rel="icon" href="favicon.ico"/>
+	<link
+			rel="apple-touch-icon-precomposed"
+			href="（アップルタッチアイコンの画像URL）"
+	/>
+	<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+	/>
+
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+	<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+			rel="stylesheet"
+	/>
+	<title>2nd storage</title>
+</head>
+<!-- ▼ヘッダー部分 //#header -->
+<body>
+<header class="header">
+	<a class="logo" href="#"
+	><img src="../images/logo.png" alt="2nd STORAGE"
+	/></a>
+	<input class="menu-btn" id="menu-btn" type="checkbox"/>
+	<div class="icon-menu-box">
+		<a class="header-user" href="#"><span>山田 太郎 様</span></a
+		><a class="header-button-01 header-button-01--icon02" href="#"
+	><span class="logout">ログアウト</span></a
+	>
+	</div>
+	<label class="menu-icon" for="menu-btn"
+	><span class="navicon"></span
+	></label>
+</header>
+
+<!-- ▼グローバルメニュー-->
+<div class="my-page_content">
+	<nav class="my-page_nav">
+		<div class="my-page_nav__user">
+			<a class="menu_user" href="#">山田 太郎 様</a>
+		</div>
+		<ul id="my-page_nav__menu" class="my-page_nav__menu">
+			<li class="my-page_nav__item my-page_nav__item--01">
+				<a href="#">マイページ</a>
+			</li>
+			<hr class="border_login_header border_login_header_01 sp_only"/>
+			<li class="my-page_nav__item my-page_nav__item--02">
+				<a href="#">アイテム一覧​</a>
+			</li>
+			<hr class="border_login_header border_login_header02 sp_only"/>
+			<li class="my-page_nav__items">
+				<div class="my-page_nav__item--ac my-page_nav__item--03">
+					集荷依頼​
+				</div>
+				<ul class="my-page_nav__submenu">
+					<li><a class="my-page_nav__subitem" href="#">集荷依頼​</a></li>
+					<li>
+						<a class="my-page_nav__subitem" href="#">集荷依頼​一覧</a>
+					</li>
+				</ul>
+				<hr class="border_login_header border_login_header03 sp_only"/>
+			</li>
+			<li class="my-page_nav__items">
+				<div class="my-page_nav__item--ac my-page_nav__item--04">
+					取出し依頼​
+				</div>
+				<ul class="my-page_nav__submenu">
+					<li><a class="my-page_nav__subitem" href="#">サブメニュー</a></li>
+					<li><a class="my-page_nav__subitem" href="#">サブメニュー</a></li>
+				</ul>
+				<hr class="border_login_header border_login_header04 sp_only"/>
+			</li>
+			<li class="my-page_nav__item my-page_nav__item--06">
+				<a href="#">ご利用額照会​</a>
+			</li>
+			<hr class="border_login_header sp_only"/>
+			<li class="my-page_nav__item my-page_nav__item--07">
+				<a href="#">お客さま情報​</a>
+			</li>
+			<hr class="border_login_header sp_only"/>
+			<li class="my-page_nav__item my-page_nav__item--08">
+				<a href="#">お問い合わせ​</a>
+			</li>
+			<hr class="border_login_header sp_only"/>
+			<li class="my-page_nav__item my-page_nav__item--09">
+				<a href="#">サービス・料金​</a>
+			</li>
+			<hr class="border_login_header sp_only"/>
+		</ul>
+	</nav>
+	<!-- ▼メイン部分 //#main -->
+	<main class="my-page_main">
+		<div class="page_itle_container">
+			<h1 class="my-page_title my-page_title--32_request_for_pickup">
+				集荷依頼​
+			</h1>
+		</div>
+		<form>
+			<div class="page_container page_container--32_request_for_pickup">
+				<section class="simulation_01">
+					<dl class="toggle_contents">
+						<dt class="toggle_title">衣料</dt>
+						<dd class="toggle_container close">
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_01.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">トップス</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item active">
+								<img
+										src="../images/sample/05_sample_illust_02.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+                      <span class="sim_item__name sim_item__name--outer"
+                      >アウター</span
+                      >
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">1</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="toggle_contents">
+						<dt class="toggle_title">ダンボール/ケース</dt>
+						<dd class="toggle_container close">
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_01.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">トップス</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item active">
+								<img
+										src="../images/sample/05_sample_illust_02.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">アウター</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">1</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="toggle_contents">
+						<dt class="toggle_title">電化製品</dt>
+						<dd class="toggle_container close">
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_01.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">トップス</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item active">
+								<img
+										src="../images/sample/05_sample_illust_02.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">アウター</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">1</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="toggle_contents">
+						<dt class="toggle_title">家具</dt>
+						<dd class="toggle_container close">
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_01.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">トップス</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item active">
+								<img
+										src="../images/sample/05_sample_illust_02.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">アウター</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">1</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="toggle_contents">
+						<dt class="toggle_title">ベビー/キッズ</dt>
+						<dd class="toggle_container close">
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_01.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">トップス</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item active">
+								<img
+										src="../images/sample/05_sample_illust_02.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">アウター</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">1</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="toggle_contents">
+						<dt class="toggle_title">アウトドア</dt>
+						<dd class="toggle_container close">
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_01.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">トップス</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item active">
+								<img
+										src="../images/sample/05_sample_illust_02.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">アウター</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">1</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="toggle_contents">
+						<dt class="toggle_title">自転車</dt>
+						<dd class="toggle_container close">
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_01.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">トップス</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item active">
+								<img
+										src="../images/sample/05_sample_illust_02.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">アウター</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">1</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="toggle_contents">
+						<dt class="toggle_title">カー用品</dt>
+						<dd class="toggle_container close">
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_01.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">トップス</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item active">
+								<img
+										src="../images/sample/05_sample_illust_02.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">アウター</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">1</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="toggle_contents">
+						<dt class="toggle_title">衣料</dt>
+						<dd class="toggle_container close">
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_01.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">トップス</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item active">
+								<img
+										src="../images/sample/05_sample_illust_02.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">アウター</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">1</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="toggle_contents">
+						<dt class="toggle_title">カー用品</dt>
+						<dd class="toggle_container close">
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_01.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">トップス</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item active">
+								<img
+										src="../images/sample/05_sample_illust_02.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">アウター</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">1</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="sim_item">
+								<img
+										src="../images/sample/05_sample_illust_03.png"
+										alt=""
+										class="sim_item__img"
+								/>
+								<div class="sim_item_flex">
+									<span class="sim_item__name">ボトム</span>
+									<div class="sim_item__volume">
+										<a href="#" class="sim_item__down"><span>-</span></a>
+										<span class="sim_item__num">0</span>
+										<a href="#" class="sim_item__up"><span>＋</span></a>
+									</div>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl class="toggle_contents">
+						<dt class="toggle_title">リストにない品物</dt>
+						<dd class="toggle_container close">
+							<div class="none_item">
+								<p class="none_item__close"><a href="#">×</a></p>
+								<ul>
+									<li>
+										<label class="none_item_name"
+										>名称<input
+												class="none_item__input none_item__input--name"
+												type="text"
+										/></label>
+									</li>
+									<li>
+										<label
+										>横幅<input
+												class="none_item__input none_item__input--alt"
+												type="text"
+										/>cm</label
+										>
+									</li>
+									<li>
+										<label
+										>奥行<input
+												class="none_item__input none_item__input--alt"
+												type="text"
+										/>cm</label
+										>
+									</li>
+									<li>
+										<label
+										>高さ<input
+												class="none_item__input none_item__input--alt"
+												type="text"
+										/>cm</label
+										>
+									</li>
+								</ul>
+							</div>
+							<div class="none_item">
+								<p class="none_item__close"><a href="#">×</a></p>
+								<ul>
+									<li>
+										<label class="none_item_name"
+										>名称<input
+												class="none_item__input none_item__input--name"
+												type="text"
+										/></label>
+									</li>
+									<li>
+										<label
+										>横幅<input
+												class="none_item__input none_item__input--alt"
+												type="text"
+										/>cm</label
+										>
+									</li>
+									<li>
+										<label
+										>奥行<input
+												class="none_item__input none_item__input--alt"
+												type="text"
+										/>cm</label
+										>
+									</li>
+									<li>
+										<label
+										>高さ<input
+												class="none_item__input none_item__input--alt"
+												type="text"
+										/>cm</label
+										>
+									</li>
+								</ul>
+							</div>
+							<div class="none_item">
+								<p class="none_item__close"><a href="#">×</a></p>
+								<ul>
+									<li>
+										<label class="none_item_name"
+										>名称<input
+												class="none_item__input none_item__input--name"
+												type="text"
+										/></label>
+									</li>
+									<li>
+										<label
+										>横幅<input
+												class="none_item__input none_item__input--alt"
+												type="text"
+										/>cm</label
+										>
+									</li>
+									<li>
+										<label
+										>奥行<input
+												class="none_item__input none_item__input--alt"
+												type="text"
+										/>cm</label
+										>
+									</li>
+									<li>
+										<label
+										>高さ<input
+												class="none_item__input none_item__input--alt"
+												type="text"
+										/>cm</label
+										>
+									</li>
+								</ul>
+							</div>
+							<div class="none_item__add">
+								<a class="button_common button_common__add-item" href="#"
+								>追加する</a
+								>
+							</div>
+						</dd>
+					</dl>
+				</section>
+
+				<section class="simulation_02 simulation_32request">
+					<div class="simulation_amount_container">
+						<dl>
+							<dt>合計金額</dt>
+							<dd>113,300<span>円（税込）</span></dd>
+						</dl>
+						<dl>
+							<dt>最適なプラン</dt>
+							<dd>10.0<span>畳プラン</span></dd>
+						</dl>
+					</div>
+					<div class="simulation_button_container">
+						<a class="button_common button_common__clc" href="#"
+						>計算する</a
+						>
+						<a class="button_common" href="#">集荷を申し込む</a>
+					</div>
+				</section>
+
+				<!--フローティングコンテンツ-->
+				<div class="amount_box">
+					<div class="amount_box__label">合計選択点数</div>
+					<div class="amount_box__num">1<span>点</span></div>
+					<a class="button_common button_common__clc-alt" href="#"
+					>計算する</a
+					>
+				</div>
+			</div>
+		</form>
+	</main>
+</div>
+
+<!-- ▼footer部分 //#footer-->
+<footer id="footer">
+	<nav>
+		<ul>
+			<li><a href="#">お問い合わせ</a></li>
+			<li><a href="#">利用規約</a></li>
+			<li><a href="#">個人情報保護方針</a></li>
+			<li><a href="#">特定商取引法及び古物営業法に基づく表記</a></li>
+			<li><a href="#">運営方針</a></li>
+		</ul>
+	</nav>
+	<hr/>
+	<p class="copyright">
+		Copyright © GEO CORPORATION. ALL RIGHTS RESERVED.​
+	</p>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

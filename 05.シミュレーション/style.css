@@ -1,0 +1,26 @@
+@import url("../css/common.css");
+@import url("../css/simulation.css");
+
+
+/*05new_fee-simulation.html ここから**********************************/
+
+
+
+.amount_box.amount_box__alt {
+    background-color: #e2e4f0;
+}
+
+.amount_box.amount_box__alt .amount_box__label {
+    margin-bottom: 0;
+}
+
+.amount_box__num {
+    font-size: 40px;
+}
+
+.amount_box__num span {
+    font-size: 20px;
+}
+
+
+/*05new_fee-simulation.html ここまで**********************************/
